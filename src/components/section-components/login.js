@@ -22,7 +22,7 @@ class Login extends Component {
 		const { email, password } = this.state;
 	
 		try {
-		  const response = await axios.post('http://localhost:8080/api/login', {
+		  const response = await axios.post('https://culture-application.up.railway.app/api/login', {
 			email: email, 
 			pwd: password
 		});

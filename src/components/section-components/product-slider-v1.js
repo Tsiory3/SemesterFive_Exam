@@ -248,7 +248,7 @@ class ProductSliderV1 extends Component {
     }
 
     fetchTerrains = () => {
-        axios.get('http://culture-application.up.railway.app/api/terrains')
+        axios.get('https://culture-application.up.railway.app/api/terrains')
             .then(response => {
                 this.setState({ fields: response.data, filteredFields: response.data });
             })
